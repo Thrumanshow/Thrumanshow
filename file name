@@ -1,18 +1,1 @@
-# Clonar el repositorio existente
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
-
-# Crear una nueva rama
-git checkout -b configuracion-syncthing
-
-# Agregar el archivo de configuración
-git add syncthing-config.conf
-
-# Realizar un commit
-git commit -m "Añadir configuración de Syncthing"
-
-# Subir los cambios
-git push origin configuracion-syncthing
-
-# Crear un Pull Request en GitHub
-
+@t
