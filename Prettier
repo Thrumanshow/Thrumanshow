@@ -1,0 +1,23 @@
+name: Format Code
+
+on: [push, pull_request]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - run: npm install
+    - run: npm run format
+    - name: Commit changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m 'Format code with Prettier' || echo 'No changes to commit'
+        git push
