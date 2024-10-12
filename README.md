@@ -6,4 +6,5 @@
 # @globalowners1 and @globalowners2 will be requested for
 # review when semeone opens a pull request.
 *            @globalowners1 @globalowners2
-/Thrumanshow-patch-6 
+/Thrumanshow-patch-6
+# docker pull ghcr.io/github/dependabot-update-job-proxy/dependabot-update-job-proxy:v2.0.20241008125715
