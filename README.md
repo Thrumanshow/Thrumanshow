@@ -11,6 +11,6 @@ Soy un desarrollador apasionado por el desarrollo web y la inteligencia artifici
 !Estadísticas de GitHub
 
 ## 📫 Cómo contactarme
-- **chrisquionez354@gmail.com**: thrumanshow@example.com
+- **chrisquionez354@gmail.com**:
 - **LinkedIn**: 
 https://www.linkedin.com/in/cristhiam-quiñonez-7b6222325
