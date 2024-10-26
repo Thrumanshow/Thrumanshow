@@ -1,10 +1,16 @@
-# This is a comment.
-# Each line is file pattern followed by one or more owners. 
+# ¡Hola! Soy Thrumanshow 👋
 
-# These owners will be the default owners for everything in
-# the repo. Unlles a later match takes procedence,
-# @globalowners1 and @globalowners2 will be requested for
-# review when semeone opens a pull request.
-*            @globalowners1 @globalowners2
-/Thrumanshow-patch-6
-# docker pull ghcr.io/github/dependabot-update-job-proxy/dependabot-update-job-proxy:v2.0.20241008125715
+Soy un desarrollador apasionado por el desarrollo web y la inteligencia artificial. Me encanta aprender y colaborar en proyectos interesantes, siempre buscando nuevas oportunidades para mejorar mis habilidades y contribuir a la comunidad.
+
+## 🔧 Tecnologías y Herramientas
+- **Lenguajes**: JavaScript, Python, Java, C++
+- **Frameworks**: React, Node.js, Django, Spring Boot
+- **Herramientas**: Git, Docker, Kubernetes, Jenkins
+
+## 📈 Estadísticas de GitHub
+!Estadísticas de GitHub
+
+## 📫 Cómo contactarme
+- **chrisquionez354@gmail.com**: thrumanshow@example.com
+- **LinkedIn**: 
+https://www.linkedin.com/in/cristhiam-quiñonez-7b6222325
