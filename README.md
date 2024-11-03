@@ -14,3 +14,4 @@ Soy un desarrollador apasionado por el desarrollo web y la inteligencia artifici
 - **chrisquionez354@gmail.com**:
 - **LinkedIn**: 
 https://www.linkedin.com/in/cristhiam-quiñonez-7b6222325
+git remote add heroku https://git.heroku.com/nombre-de-tu-aplicacion.git
