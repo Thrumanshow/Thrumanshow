@@ -11,8 +11,4 @@ Soy un desarrollador apasionado por el desarrollo web y la inteligencia artifici
 !Estadísticas de GitHub
 
 ## 📫 Cómo contactarme
-- **chrisquionez354@gmail.com**:
-- **LinkedIn**: 
-https://www.linkedin.com/in/cristhiam-quiñonez-7b6222325
-- **Heroku-wp**:
-https://git.heroku.com/wwwhormigasaisa.com.heroku/
+https://bsky.app/profile/thrumanshow.bsky.social
