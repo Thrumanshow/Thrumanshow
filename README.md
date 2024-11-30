@@ -11,6 +11,7 @@ Soy un desarrollador apasionado por el desarrollo web y la inteligencia artifici
 !Estadísticas de GitHub
 
 ## 📫 Cómo contactarme
-http//bsky.app/profile/thrumanshow.bsky.social
+- **Heroku-web**:
+http//www.HormigasaAIS.com.heroku/
 - **LinkedIn**:
 http//heroku.app/profile/www.linkedin.com/in/cristhiam-quiñonez-7b622232525
