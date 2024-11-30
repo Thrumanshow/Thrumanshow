@@ -14,7 +14,5 @@ Soy un desarrollador apasionado por el desarrollo web y la inteligencia artifici
 - **chrisquionez354@gmail.com**:
 - **LinkedIn**: 
 https://www.linkedin.com/in/cristhiam-quiñonez-7b6222325
-- **Gitremoteaddheroku**:
-https://git.heroku.com/hormigasaisa.git
-- **Heroku-web**:
-https://www.hormigasaisa.heroku
+- **Heroku-wp**:
+https://git.heroku.com/wwwhormigasaisa.com.heroku/
