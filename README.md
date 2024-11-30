@@ -11,4 +11,5 @@ Soy un desarrollador apasionado por el desarrollo web y la inteligencia artifici
 !Estadísticas de GitHub
 
 ## 📫 Cómo contactarme
-https://bsky.app/profile/thrumanshow.bsky.social
+- **bsky**:http//bsky.app/profile/thrumanshow.bsky.social
+- **LinkedIn**:http//heroku.app/profile/www.linkedin.com/in/cristhiam-quiñonez-7b622232525
