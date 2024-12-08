@@ -12,6 +12,6 @@ Soy un desarrollador apasionado por el desarrollo web y la inteligencia artifici
 
 ## 📫 Cómo contactarme
 - **Heroku-web**:
-http://Hormigasaais.heroku
+http://hormigasaais.heroku
 - **LinkedIn**:
 http//heroku.app/profile/www.linkedin.com/in/cristhiam-quiñonez-7b622232525
