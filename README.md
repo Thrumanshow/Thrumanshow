@@ -13,6 +13,16 @@
 - **Flujos vivos**: Inspirados en ritmos orgánicos, pausas necesarias y decisiones creativas.
 
 ---
+## Conecta con HormigasAIS 
+
+Explora y colabora con nuestra comunidad de inteligencia colectiva: 
+
+[![Newsletter en LinkedIn](https://img.shields.io/badge/LinkedIn%20Newsletter-HormigasAIS-blue?logo=linkedin)](https://www.linkedin.com/newsletters/hormigasais-community-7307138608543490048)
+[![Slack Comunidad](https://img.shields.io/badge/Slack-Unirse%20a%20la%20comunidad-4A154B?logo=slack)](https://join.slack.com/t/hormigas-ais/shared_invite/zt-33zssiv5x-WXs1_8mQ6_9m0O9g0VNgAA)
+[![Overleaf Colaboración](https://img.shields.io/badge/Overleaf-Proyectos%20colaborativos-47A141?logo=overleaf)](https://www.overleaf.com/project/68211943b603360a835cd2cd)
+[![Wikipedia Usuario](https://img.shields.io/badge/Wikipedia-Perfil%20HormigasAIS-black?logo=wikipedia)](https://uk.wikipedia.org/wiki/Користувач:HormigasAIS)
+[![Repositorio base](https://img.shields.io/badge/GitHub-Laboratorio%20Open%20Lab-24292e?logo=github)](https://github.com/Thrumanshow/Mkdir-HormigasAIS-Open-Lab-/tree/main/.github)
+---
 
 ## Repositorios destacados
 
