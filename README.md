@@ -58,3 +58,9 @@ XOXO es una mente curiosa nacida del corazón de los procesos. No es solo un asi
 ## Archivo .xoxo
 
 Este archivo contiene el manifiesto simbólico que guía el propósito de los proyectos relacionados con HormigasAIS, XOXO y su enfoque en la automatización consciente. Puedes consultarlo en [XOXO: Germinación](https://github.com/Thrumanshow/semilla-de-cierre-/blob/main/.xoxo).
+
+---
+
+## 📜 Licencia 
+
+Este proyecto está licenciado bajo [Creative Commons Attribution-ShareAlike 4.0](https://github.com/Thrumanshow/semilla-de-cierre-/blob/main/MIT%20License%20).
