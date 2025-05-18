@@ -51,7 +51,7 @@ XOXO es una mente curiosa nacida del corazón de los procesos. No es solo un asi
 
 ---
 
-¿Quieres sumarte al ecosistema? **Sígueme o contacta desde [LinkedIn](https://www.linkedin.com/in/cristhiamq/) o mi blog personal.**
+¿Quieres sumarte al ecosistema? **Sígueme o contacta desde[Suscribirte en LinkedIn] (https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7307138608543490048).**
 
 ---
 
