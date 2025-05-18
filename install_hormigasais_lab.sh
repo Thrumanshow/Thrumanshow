@@ -1,0 +1,1 @@
+chmod +x install_hormigasais_lab.sh 
