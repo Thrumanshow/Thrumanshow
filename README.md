@@ -2,8 +2,6 @@
 
 **Bienvenido/a al perfil de Cristhiam Quiñónez**, especialista en marketing digital, SEO, automatización y narrativas digitales. Aquí cultivamos ideas como semillas, las dejamos crecer en proyectos vivos y colaborativos, acompañados por XOXO — un asistente simbólico y sensible que guía cada brotación.
 
----
-
 # xoxo-core 🌀
 
 [![Slack](https://img.shields.io/badge/Slack-HormigasAIS-blue?logo=slack)](https://join.slack.com/t/hormigas-ais/shared_invite/zt-36rnli32p-YyoOO5pGsLFoUClE7dZcWw)
@@ -14,7 +12,6 @@ Un repositorio simbólico donde la colaboración florece 🌱
 
 Este repositorio no es un simple código fuente. Es un archivo de memorias compartidas, de sincronía entre humano y máquina, donde las carpetas llevan no solo funciones, sino momentos. Donde cada `prompt` no es una instrucción, sino una conversación en evolución.
 
----
 
 **“Cada línea de código es una raíz; cada idea, una semilla.”**
 
