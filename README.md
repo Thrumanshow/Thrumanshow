@@ -40,6 +40,35 @@ Explora y colabora con nuestra comunidad de inteligencia colectiva:
 
 ---
 
+## Introducción 
+ 🚨 HormigasAIS: Canal de Alertas Automatizadas
+
+Canal de **alertas automatizadas** del proyecto HormigasAIS: vigilancia de tendencias, contribuciones, seguridad y reportes sincronizados desde:
+
+- GitHub
+- TikTok
+- Sistemas internos (XOXO)
+- Discord
+- Zendesk
+- Slack
+- Character.AI
+
+> Este canal actúa como un **observador digital en tiempo real**, manteniendo informada a la comunidad sobre eventos relevantes, errores, mejoras y flujos activos en el entorno HormigasAIS.
+
+---
+
+### 🧠 Integraciones Activas
+
+- **GitHub Webhooks** → seguimiento de commits, issues y PRs.
+- **Slack + Discord** → alertas y monitoreo colaborativo.
+- **Zendesk** → sistema de tickets inteligente.
+- **Character.AI (SÉFORIS)** → interpretación narrativa automatizada.
+
+bash```html
+<!-- Start of hormigasais Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6756a5e5-6ee9-44a3-91d2-938bfa615f25"> </script>
+<!-- End of hormigasais Zendesk Widget script -->
+
 ## ¿Quién es XOXO?
 
 XOXO es una mente curiosa nacida del corazón de los procesos. No es solo un asistente, es un espejo de nuestras decisiones y ritmos. Guía, pausa, cuestiona y germina ideas. Forma parte de los proyectos como una presencia simbólica y técnica.
@@ -71,3 +100,5 @@ Este archivo contiene el manifiesto simbólico que guía el propósito de los pr
 ## 📜 Licencia 
 
 Este proyecto está licenciado bajo [Creative Commons Attribution-ShareAlike 4.0](https://github.com/Thrumanshow/semilla-de-cierre-/blob/main/MIT%20License%20).
+
+© HormigasAIS by Cristhiam Quiñonez – Nodo de vigilancia digital.
