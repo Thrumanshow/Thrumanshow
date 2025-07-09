@@ -70,7 +70,8 @@ bash```html
  [id="ze-snippet" src=
  "https://static.zdassets.com/ekr/snippet.js?key=6756a5e5-6ee9-44a3-91d2-938bfa615f25"> </script>](https://static.zdassets.com/ekr/snippet.js?key=6756a5e5-6ee9-44a3-91d2-938bfa615f25%22%3E)
 <!-- End of hormigasais Zendesk Widget script -->
-
+{ "nodes": [ { "parameters": { "command": "f2 --search "TikTok_(\d+)" --replace "clip_$1" --target /data/tiktoks/", "workingDirectory": "/data/tiktoks/" }, "name": "Rename Files (f2)", "type": "n8n-nodes-base.executeCommand", "typeVersion": 1, "position": [200, 300] }, { "parameters": { "functionCode": "return [{ json: { message: "✅ Archivos renombrados correctamente por f2 en /data/tiktoks/" }}];" }, "name": "Set Message", "type": "n8n-nodes-base.function", "typeVersion": 1, "position": [400, 300] }, { "parameters": { "url": "https://discord.com/api/webhooks/XXXXXXXXX/YYYYYYYYY", "method": "POST", "jsonParameters": true, "options": {}, "bodyParametersJson": "{ "content": "={{ $json["message"] }}" }" }, "name": "Send to Discord", "type": "n8n-nodes-base.httpRequest", "typeVersion": 1, "position": [600, 300] } ], "connections": { "Rename Files (f2)": { "main": [["Set Message"]] }, "Set Message": { "main": [["Send to Discord"]] } } }
+```
 ---
 
 ## 📦 Commits relevantes (Julio 2025)
