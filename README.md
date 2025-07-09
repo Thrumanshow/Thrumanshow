@@ -66,7 +66,9 @@ Canal de **alertas automatizadas** del proyecto HormigasAIS: vigilancia de tende
 
 bash```html
 <!-- Start of hormigasais Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6756a5e5-6ee9-44a3-91d2-938bfa615f25"> </script>
+<script 
+ [id="ze-snippet" src=
+ "https://static.zdassets.com/ekr/snippet.js?key=6756a5e5-6ee9-44a3-91d2-938bfa615f25"> </script>](https://static.zdassets.com/ekr/snippet.js?key=6756a5e5-6ee9-44a3-91d2-938bfa615f25%22%3E)
 <!-- End of hormigasais Zendesk Widget script -->
 
 ---
