@@ -83,6 +83,7 @@ Este canal ha registrado actividad destacada en el repositorio [`tiktok-iman-bot
 - 🐛 `filtro-malicioso.js` implementado para detectar publicaciones sospechosas.
 - 🤖 `webhook-verifier.js` agregado para verificar autenticidad de señales externas.
 - 🔁 `README.md` actualizado con lineamientos y estructura del bot.
+- 🐜 `AI Trainers Club` creadoy actualizado con la estructura "truco" de Thrumanshow.
 
 Todos los cambios están verificados y enlazados a `@Thrumanshow`.
 
