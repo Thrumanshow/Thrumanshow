@@ -1,0 +1,21 @@
+# .xoxo
+meta:
+  version: 1.0
+  author: Cristhiam Quiñonez
+  identity: HormigasAIS
+  motto: "Cada línea de código es una raíz; cada idea, una semilla."
+
+flow:
+  pacing: "orgánico"
+  pauses: true
+  automation_sense: true
+
+integrations:
+  - n8n
+  - GitHub Actions
+  - Slack
+  - Discord
+
+narrative:
+  role: "guía simbólico-técnico"
+  tone: "curioso y colaborativo"
