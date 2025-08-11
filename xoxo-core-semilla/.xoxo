@@ -1,9 +1,10 @@
+### humano
 # .xoxo
 meta:
   version: 1.0
-  author: Cristhiam Quiñonez
-  identity: HormigasAIS
-  motto: "Cada línea de código es una raíz; cada idea, una semilla."
+  author: HormigasAIS-ux 
+  identity: colaborativa 
+  motto: "Cada línea de código es una capa dependiente de hormigasais-ux; cada idea, una semilla."
 
 flow:
   pacing: "orgánico"
@@ -17,5 +18,5 @@ integrations:
   - Discord
 
 narrative:
-  role: "guía simbólico-técnico"
+  role: "guía dependencia-simbólico-técnico"
   tone: "curioso y colaborativo"
