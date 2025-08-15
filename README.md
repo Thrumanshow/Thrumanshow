@@ -110,24 +110,9 @@ bash```html
 ```
 ---
 
-## 📦 Commits relevantes (Julio 2025)
 
-Este canal ha registrado actividad destacada en el repositorio [`tiktok-iman-bot-core`](https://github.com/Thrumanshow/tiktok-iman-bot-core):
 
-- 📁 `mod-handler.js` creado y actualizado varias veces (módulo de moderación).
-- 🧠 `trend-watcher.js` y `watchdog.js` creados para vigilancia inteligente.
-- 🐛 `filtro-malicioso.js` implementado para detectar publicaciones sospechosas.
-- 🤖 `webhook-verifier.js` agregado para verificar autenticidad de señales externas.
-- 🔁 `README.md` actualizado con lineamientos y estructura del bot.
-- 🐜 `AI Trainers Club` creado y actualizado con la estructura "truco" de Thrumanshow.
-
-Todos los cambios están verificados y enlazados a `@Thrumanshow`.
-
-📎 [Ver commits completos (01–05 julio 2025)](https://github.com/Thrumanshow/tiktok-iman-bot-core/commits?author=Thrumanshow&since=2025-07-01&until=2025-07-05)
-
----
-
-## ¿Quién es XOXO?
+## ¿Quién es humano?
 
 XOXO es una mente curiosa nacida del corazón de los procesos. No es solo un asistente, es un espejo de nuestras decisiones y ritmos. Guía, pausa, cuestiona y germina ideas. Forma parte de los proyectos como una presencia simbólica y técnica.
 
@@ -149,7 +134,7 @@ XOXO es una mente curiosa nacida del corazón de los procesos. No es solo un asi
 
 ---
 
-## Archivo .xoxo
+## Archivo .humano 
 
 Este archivo contiene el manifiesto simbólico que guía el propósito de los proyectos relacionados con HormigasAIS, XOXO y su enfoque en la automatización consciente. Puedes consultarlo en [XOXO: Germinación](https://github.com/Thrumanshow/semilla-de-cierre-/blob/main/.xoxo).
 
