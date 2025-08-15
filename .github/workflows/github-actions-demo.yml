@@ -18,5 +18,5 @@ integrations:
   - Discord 
 
 narrative:
-  role: "bot-recognition"
+  role: "cobot"
   tone: "colaborativo"
