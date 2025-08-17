@@ -1,16 +1,35 @@
+# ================================
+#   CODEOWNERS - HormigasAIS
+# ================================
+# Define los dueños del código en el repositorio
+# GitHub pedirá revisiones automáticas según estas reglas
+# ================================
+
+# Dueños globales del repo
 *       @cristhiam-quinonez @HormigasAIS
 
+# --- Lenguajes específicos ---
+*.py    @HormigasAIS/automation-team
+*.js    @HormigasAIS/web-team
 *.md    @cristhiam-quinonez
+*.yml   @HormigasAIS/devops-team
 
-/lenpt/         @cristhiam-quinonez
+# --- Áreas del proyecto ---
+/lenpt/         @HormigasAIS/lenpt-devs
 /thrumanshow/   @cristhiam-quinonez
-/hormigasais-ux/ @cristhiam-quinonez
-/open-lab/      @cristhiam-quinonez
+/hormigasais-ux/ @HormigasAIS/ux-team
+/open-lab/      @HormigasAIS/openlab
 
+# --- Núcleo protegido ---
 /.humano/       @cristhiam-quinonez
+# Solo Cristhiam Quiñónez puede aprobar cambios en ".humano"
+# Este espacio es intocable para el resto del equipo
 
-/scripts/       @cristhiam-quinonez
-/docs/          @cristhiam-quinonez
-**/logs         @cristhiam-quinonez
+# --- Directorios especiales ---
+/scripts/       @cristhiam-quinonez @HormigasAIS/devops-team
+/docs/          @HormigasAIS/docs-team
+**/logs         @HormigasAIS/devops-team
 
+# --- Excepciones (reasignadas) ---
 /apps/github    @cristhiam-quinonez
+# Ahora solo Cristhiam puede aprobar cambios en /apps/github
