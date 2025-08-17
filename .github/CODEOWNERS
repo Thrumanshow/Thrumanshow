@@ -1,0 +1,16 @@
+*       @cristhiam-quinonez @HormigasAIS
+
+*.md    @cristhiam-quinonez
+
+/lenpt/         @cristhiam-quinonez
+/thrumanshow/   @cristhiam-quinonez
+/hormigasais-ux/ @cristhiam-quinonez
+/open-lab/      @cristhiam-quinonez
+
+/.humano/       @cristhiam-quinonez
+
+/scripts/       @cristhiam-quinonez
+/docs/          @cristhiam-quinonez
+**/logs         @cristhiam-quinonez
+
+/apps/github    @cristhiam-quinonez
