@@ -56,6 +56,7 @@ Este repositorio no es un simple código fuente. Es un archivo de memorias compa
 - **Flujos vivos**: Inspirados en ritmos orgánicos, pausas necesarias y decisiones creativas.
 
 ---
+
 ## Conecta con HormigasAIS 
 
 Explora y colabora con nuestra comunidad de inteligencia colectiva: 
@@ -65,6 +66,7 @@ Explora y colabora con nuestra comunidad de inteligencia colectiva:
 [![Overleaf Colaboración](https://img.shields.io/badge/Overleaf-Proyectos%20colaborativos-47A141?logo=overleaf)](https://www.overleaf.com/project/68211943b603360a835cd2cd)
 [![Wikipedia Usuario](https://img.shields.io/badge/Wikipedia-Perfil%20HormigasAIS-black?logo=wikipedia)](https://uk.wikipedia.org/wiki/Користувач:HormigasAIS)
 [![Repositorio base](https://img.shields.io/badge/GitHub-Laboratorio%20Open%20Lab-24292e?logo=github)](https://github.com/Thrumanshow/Mkdir-HormigasAIS-Open-Lab-/tree/main/.github)
+
 ---
 
 ## Repositorios destacados
