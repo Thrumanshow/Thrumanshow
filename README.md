@@ -33,6 +33,10 @@ narrative:
   role: "guía simbólico-técnico"
   tone: "curioso y colaborativo"
 
+
+ ---
+
+
 **Bienvenido/a al perfil de Cristhiam Quiñónez**, especialista en marketing digital, SEO, automatización y narrativas digitales. Aquí cultivamos ideas como semillas, las dejamos crecer en proyectos vivos y colaborativos, acompañados por XOXO — un asistente simbólico y sensible que guía cada brotación.
 
 # xoxo-core 🌀
