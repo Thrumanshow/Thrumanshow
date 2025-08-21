@@ -1,9 +1,6 @@
-# Thrumanshow — La semilla digital de HormigasAIS
+##Thrumanshow 
 
-
-
-
-## 🌱 El corazón `.humano` 
+#🌱 El corazón `.humano` 
 
 Este repositorio incluye un archivo **.humano**, que funciona como **manifiesto narrativo-técnico** dentro del ecosistema **HormigasAIS**. 
 
