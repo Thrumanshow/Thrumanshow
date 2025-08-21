@@ -1,4 +1,3 @@
-##Thrumanshow 
 
 #🌱 El corazón `.humano` 
 
