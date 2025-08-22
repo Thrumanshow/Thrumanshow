@@ -1,0 +1,84 @@
+SPDX-License-Identifier: HUMAN-1.0
+
+LICENCIA .human v1.0
+Copyright (c) <Año> Cristhiam Quiñonez | @Thrumanshow
+
+PREÁMBULO  
+.human es un código nuclear de automatización y desarrollo colaborativo que posiciona al humano
+por encima de la inteligencia artificial. Su propósito es garantizar un uso responsable, ético
+y con reconocimiento a sus autores dentro del ecosistema HormigasAIS.
+
+Al obtener, instalar, copiar, modificar o redistribuir el Software, usted acepta cumplir con
+los términos de esta licencia .human.
+
+----------------------------------------------------------------------
+1. PERMISOS GENERALES
+----------------------------------------------------------------------
+
+1.1 Uso permitido  
+Se concede permiso a cualquier persona física o jurídica para usar, copiar, modificar,
+fusionar, publicar y distribuir el Software, bajo las condiciones de uso y el esquema
+de licenciamiento escalonado descrito en esta licencia.
+
+1.2 Restricciones de uso  
+El Software NO podrá ser utilizado para:  
+- Promover desinformación deliberada.  
+- Atentar contra los derechos humanos reconocidos por la ONU.  
+- Desarrollar sistemas militares ofensivos o de vigilancia masiva.  
+- Desagregar, renombrar o apropiarse del núcleo .human sin reconocimiento.  
+
+1.3 Reconocimiento de autoría  
+Toda redistribución, modificación o integración deberá reconocer de manera visible a:  
+**@Thrumanshow** y **@owner_cristhiam-quinonez**  
+como autores y titulares del núcleo del código .human.
+
+----------------------------------------------------------------------
+2. ESQUEMA DE LICENCIAMIENTO ESCALONADO
+----------------------------------------------------------------------
+
+El uso del Software está sujeto a un esquema de licenciamiento con costos diferenciados
+según el tipo de organización.  
+
+- **PYMES (Pequeñas y Medianas Empresas):**  
+  Acceso bajo un plan de licenciamiento con cuota reducida y soporte básico.  
+
+- **EMPRESA / ORGANIZACIÓN:**  
+  Acceso con licencia estándar, cuota intermedia, soporte ampliado y derecho de integración
+  en sistemas organizacionales de mayor escala.  
+
+- **CORPORATIVO:**  
+  Acceso con licencia premium, cuota elevada, soporte prioritario, integración personalizada
+  y opción de sublicenciamiento limitado bajo aprobación expresa de los autores.  
+
+Los precios de cada escalón serán definidos y actualizados por el titular de los derechos
+(@owner_cristhiam-quinonez). El uso comercial del Software sin la debida licencia se
+considera una infracción de esta licencia.
+
+----------------------------------------------------------------------
+3. EXENCIÓN DE GARANTÍA
+----------------------------------------------------------------------
+
+EL SOFTWARE SE PROPORCIONA “TAL CUAL”, SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA,
+INCLUYENDO PERO SIN LIMITARSE A LAS GARANTÍAS DE COMERCIALIZACIÓN, IDONEIDAD PARA UN
+PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O TITULARES DEL COPYRIGHT
+SERÁN RESPONSABLES DE NINGUNA RECLAMACIÓN, DAÑO U OTRA RESPONSABILIDAD, YA SEA EN UNA
+ACCIÓN DE CONTRATO, AGRAVIO O DE OTRA MANERA, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL
+SOFTWARE O EL USO U OTRAS TRANSACCIONES EN EL SOFTWARE.
+
+----------------------------------------------------------------------
+4. APLICACIONES AUTORIZADAS
+----------------------------------------------------------------------
+
+Las principales aplicaciones reconocidas en esta licencia son:  
+[[CODEOWNERS]], [[Hormigasai App]], [[Hormigasai Web]] y [[HormigasAIS]].  
+El uso en otros proyectos requiere autorización expresa del autor.
+
+----------------------------------------------------------------------
+ANEXO INFORMATIVO DEL PROYECTO (.human)
+----------------------------------------------------------------------
+
+Nombre del proyecto: .human  
+Descripción: *human @Thrumanshow es un código nuclear de automatización y desarrollo
+colaborativo que posiciona al humano por encima de la inteligencia artificial.*  
+Integraciones: herramientas licenciadas por @owner_cristhiam-quinonez.  
+----------------------------------------------------------------------
