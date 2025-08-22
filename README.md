@@ -1,4 +1,4 @@
-
+í
 #🌱 El corazón `.humano` 
 
 Este repositorio incluye un archivo **.humano**, que funciona como **manifiesto narrativo-técnico** dentro del ecosistema **HormigasAIS**. 
@@ -141,12 +141,12 @@ Este archivo contiene el manifiesto simbólico que guía el propósito de los pr
 
 ---
 
-## 📜 Licencia 
+## 📜 LICENSE.human
 
 SPDX-License-Identifier: HUMAN-1.0
 
 LICENCIA .human v1.0
-Copyright (c) <Año> Cristhiam Quiñonez | @Thrumanshow
+Copyright (c) <2025> Cristhiam Quiñonez | @Thrumanshow
 
 PREÁMBULO  
 .human es un código nuclear de automatización y desarrollo colaborativo que posiciona al humano
