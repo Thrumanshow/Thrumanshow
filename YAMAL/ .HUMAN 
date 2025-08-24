@@ -1,0 +1,45 @@
+# 🌱 Parche YAML .HUMAN Mejorado
+# Incluye verificación de hardware y SO antes de instalar paquetes
+
+properties:
+  owner: cristhiam-quinonez.
+
+resources:
+  # --- Verificación de sistema operativo ---
+  - resource: Microsoft.PowerShell.DSC/Script
+    id: verifyOS
+    directives:
+      description: "Check Windows version and architecture"
+    settings:
+      GetScript: |
+        $osVersion = (Get-ComputerInfo).WindowsVersion
+        $arch = (Get-ComputerInfo).OsArchitecture
+        if ($osVersion -lt '10.0.19045' -or $arch -ne '64-bit') {
+            throw "Incompatible OS or architecture"
+        }
+
+  # --- Verificación de hardware ---
+  - resource: Microsoft.PowerShell.DSC/Script
+    id: verifyHW
+    directives:
+      description: "Check RAM and disk space"
+    settings:
+      GetScript: |
+        $ram = (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory / 1GB
+        $disk = (Get-PSDrive C).Free / 1GB
+        if ($ram -lt 8 -or $disk -lt 20) {
+            throw "Insufficient RAM or disk space"
+        }
+
+  # --- Instalación de paquetes ---
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: pythonPackage
+    dependsOn:
+      - verifyOS
+      - verifyHW
+    directives:
+      description: Install Python 3.12
+      allowPrerelease: true
+    settings:
+      id: Python.Python.3.12
+      source: winget
