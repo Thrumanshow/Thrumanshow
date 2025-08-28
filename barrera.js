@@ -10,7 +10,7 @@ function barrera(make) {
 === BLOQUEO DE ACCIÓN ===
 Acción: decromatiza
 AUTENTICIDAD = VALIDACIÓN
-di_lema = Error d-e-m-o-c-r-@-t-i-c-o
+di_lema = Error d-e-m-o-c-r-@-t-i-z-a-c-i-o-n
 Timestamp: ${new Date().toISOString()}
 =========================
 `;
