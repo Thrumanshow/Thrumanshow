@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UltraPro16 Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<style>
+  body { font-family: system-ui, Arial; background:#071029; color:#e6eef8; margin:0; padding:16px; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  .kpis { display:flex; gap:12px; margin-bottom:12px; }
+  .card { flex:1; background:#0f2340; padding:12px; border-radius:10px; border:1px solid #18304b; }
+  .title { font-size:14px; color:#a8c2e8; }
+  .big { font-size:28px; font-weight:800; }
+  .grid { display:grid; grid-template-columns:2fr 1fr; gap:12px; }
+  .logs { height:260px; overflow:auto; background:#041226; padding:10px; border-radius:8px; border:1px solid #12243b; font-family:monospace; }
+  .badge { display:inline-block; padding:4px 8px; border-radius:999px; margin-right:6px; font-size:12px; color:#fff; }
+  .GET{background:#2f8a3f}.POST{background:#b38a1f}.PUT{background:#176b96}.DELETE{background:#a83232}.OTHER{background:#666}
+  a { color:#89baff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🚀 UltraPro16 — Dashboard (tiempo real)</h1>
+
+  <div class="kpis">
+    <div class="card"><div class="title">RPM (requests/min)</div><div id="rpm" class="big">0</div></div>
+    <div class="card"><div class="title">Pico RPM</div><div id="peak" class="big">0</div></div>
+    <div class="card"><div class="title">Total solicitudes</div><div id="total" class="big">0</div></div>
+    <div class="card"><div class="title">Umbral</div><div id="th" class="big">-</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="title">Solicitudes por método</div>
+      <canvas id="byMethod"></canvas>
+      <div style="margin-top:8px" id="last">Última: —</div>
+    </div>
+    <div class="card">
+      <div class="title">Últimos eventos</div>
+      <div class="logs" id="logs"></div>
+    </div>
+  </div>
+
+  <div style="margin-top:12px" class="card">
+    <div class="title">Solicitudes por minuto (serie)</div>
+    <canvas id="perMinute"></canvas>
+  </div>
+</div>
+
+<script>
+const socket = io();
+
+const elRPM = document.getElementById('rpm');
+const elPeak = document.getElementById('peak');
+const elTotal = document.getElementById('total');
+const elTh = document.getElementById('th');
+const elLogs = document.getElementById('logs');
+const elLast = document.getElementById('last');
+const byCtx = document.getElementById('byMethod').getContext('2d');
+const pmCtx = document.getElementById('perMinute').getContext('2d');
+
+const byChart = new Chart(byCtx, {
+  type:'bar',
+  data: {
+    labels:['GET','POST','PUT','DELETE','OTHER'],
+    datasets:[{label:'Acumulado', data:[0,0,0,0,0], backgroundColor:['#2f8a3f','#b38a1f','#176b96','#a83232','#666']}]
+  },
+  options: { animation:false }
+});
+
+const pmChart = new Chart(pmCtx, {
+  type:'line',
+  data: {
+    labels:[],
+    datasets:[{label:'RPM', data:[], fill:true, borderColor:'#89baff', backgroundColor:'rgba(137,186,255,0.08)'}]
+  },
+  options:{ animation:false, scales:{ y:{ beginAtZero:true } } }
+});
+
+function addLog(l) {
+  const d = document.createElement('div');
+  d.innerHTML = `<span class="badge ${l.method}">${l.method}</span> ${new Date(l.time).toLocaleTimeString()} — <b>${l.url}</b>`;
+  elLogs.prepend(d);
+  while(elLogs.childElementCount>50) elLogs.removeChild(elLogs.lastChild);
+}
+
+function setBy(stats) {
+  const order=['GET','POST','PUT','DELETE','OTHER'];
+  const vals=order.map(k=>stats[k]||0);
+  byChart.data.datasets[0].data=vals; byChart.update();
+  elTotal.textContent = vals.reduce((a,b)=>a+b,0);
+}
+
+function setPer(arr) {
+  pmChart.data.labels = arr.map(x=>new Date(x.minute*60000).toLocaleTimeString());
+  pmChart.data.datasets[0].data = arr.map(x=>x.count);
+  pmChart.update();
+}
+
+async function bootstrap() {
+  const r = await fetch('/metrics'); 
+  const d = await r.json();
+  setBy(d.stats);
+  setPer(d.perMinute||[]);
+  elRPM.textContent = d.rpm||0;
+  elPeak.textContent = d.peak||0;
+  elTh.textContent = Number(new URLSearchParams(location.search).get('t')||'5');
+  (d.history||[]).reverse().forEach(addLog);
+  if(d.history && d.history.length) {
+    const last = d.history[d.history.length-1];
+    elLast.innerHTML = `<span class="badge ${last.method}">${new Date(last.time).toLocaleTimeString()}</span> — <b>${last.url}</b>`;
+  }
+}
+
+bootstrap();
+
+socket.on('metrics:update', payload => {
+  if(payload.stats) setBy(payload.stats);
+  if(payload.perMinute) setPer(payload.perMinute);
+  elRPM.textContent = payload.rpm;
+  elPeak.textContent = payload.peak;
+  if(payload.last) {
+    addLog(payload.last);
+    elLast.innerHTML = `<span class="badge ${payload.last.method}">${new Date(payload.last.time).toLocaleTimeString()}</span> — <b>${payload.last.url}</b>`;
+  }
+});
+</script>
+</body>
+</html>
