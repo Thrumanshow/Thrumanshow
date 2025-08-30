@@ -1,12 +1,12 @@
 # --- Slack / HormigasAIS ---
-SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXXX/YYYYY/ZZZZZ
-SLACK_BOT_TOKEN=                # opcional, solo si usas el bot en lugar del webhook
-SLACK_CHANNEL=#barrera-log       # canal de Slack vinculado al webhook
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/TU/WEBHOOK_ID
+SLACK_BOT_TOKEN=                  # opcional si solo usas Webhook
+SLACK_CHANNEL=#barrera-log         # canal ya vinculado con el webhook
 
-# --- Email (SMTP) ---
-SMTP_USER=tu_correo@gmail.com
-SMTP_PASS=tu_contraseña_app      # generar en Google "App Password" si usas Gmail
+# --- Email (chrisquionez354@gmail.com) ---
+SMTP_USER=chris.quinonez@gmail.com
+SMTP_PASS=gjla cxzf wyfj ipot      # contraseña de app nueva
 
 # --- Configuración del servidor ---
-THRESHOLD=5                      # número máximo de intentos antes de bloquear
-PORT=3000                        # puerto donde correrá tu app (Node.js)
+THRESHOLD=5
+PORT=3000
