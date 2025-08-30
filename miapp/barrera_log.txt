@@ -1,0 +1,8 @@
+=== BARRERA LOG INICIAL ===
+# Archivo de registro de barrera.js
+# Cada intento bloqueado será añadido automáticamente con timestamp
+# Formato de entrada:
+# === BLOQUEO DE ACCIÓN ===
+# Mensaje del bloqueo
+# Timestamp: ISO 8601
+# =========================
