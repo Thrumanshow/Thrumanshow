@@ -1,28 +1,15 @@
 {
   "name": "hormigasais-lbh",
   "version": "1.0.0",
-  "description": "Lenguaje Binario HormigasAIS (LBH) - codificación y decodificación bidireccional",
   "main": "src/lbh.js",
-  "type": "module",
   "scripts": {
-    "start": "node src/lbh.js",
-    "test": "node examples/test.js",
-    "dev": "nodemon src/lbh.js",
-    "lint": "eslint ."
+    "start": "node src/server.js",
+    "test": "node examples/test.js"
   },
-  "keywords": [
-    "HormigasAIS",
-    "LBH",
-    "binario",
-    "script",
-    "codificación",
-    "decodificación"
-  ],
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
   "author": "Cristhiam Quiñonez",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "eslint": "^9.0.0",
-    "nodemon": "^3.0.0"
-  }
+  "license": "MIT"
 }
