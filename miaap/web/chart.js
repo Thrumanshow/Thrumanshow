@@ -1,9 +1,9 @@
-io.of("/my-thrumanshow").on("connection", (socket) => {
+io.of("/my-miapp").on("connection", (socket) => {
   socket
     .timeout(5000)
     .to("room1")
     .to(["room2", "room3"])
-    .except("16ultrapro")
+    .except("thrumanshow")
     .emit("hello", (err, responses) => {
       // ...
     });
