@@ -1,0 +1,9 @@
+# Puerto del servidor web
+PORT=3000 
+
+# WebSocket / Socket.IO
+SOCKET_PATH=/socket.io 
+
+# Thrumanshow / run16.sh 
+LENGUAJE _ BINARIO _HORMIGASAIS=/HormigasAIS-LBH.git 
+SECRET_KEY_HORMIGASAIS=/LBH npm install
