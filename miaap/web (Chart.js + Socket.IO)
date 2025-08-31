@@ -1,0 +1,10 @@
+io.of("/my-thrumanshow").on("connection", (socket) => {
+  socket
+    .timeout(5000)
+    .to("room1")
+    .to(["room2", "room3"])
+    .except("16ultrapro")
+    .emit("hello", (err, responses) => {
+      // ...
+    });
+});
