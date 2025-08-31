@@ -1,0 +1,12 @@
+{
+  "name": "hormigasais-lbh",
+  "version": "1.0.0",
+  "description": "Lenguaje Binario HormigasAIS (LBH) - codificación y decodificación bidireccional",
+  "main": "src/lbh.js",
+  "scripts": {
+    "test": "node examples/test.js"
+  },
+  "keywords": ["HormigasAIS", "LBH", "binario", "script"],
+  "author": "Cristhiam Quiñonez",
+  "license": "MIT"
+}
