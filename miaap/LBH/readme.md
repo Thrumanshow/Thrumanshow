@@ -35,3 +35,13 @@ cd miaap/LBH
 +# Abrir el dashboard web
 +termux-open-url http://localhost:3000
 ```
+---
+
+cd ~/miapp
+git clone --filter=blob:none --sparse https://github.com/Thrumanshow/Thrumanshow.git
+cd Thrumanshow
+git sparse-checkout set miaap/LBH
+cd miaap/LBH
+mkdir -p public
+# Copiar el index.html nuevo al lugar correcto
+cp /Thrumanshow/miapp/LBH/index.html public/index.html
