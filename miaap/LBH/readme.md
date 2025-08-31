@@ -5,7 +5,7 @@ Este proyecto permite **codificar y decodificar texto** usando el Lenguaje Binar
 ## Instalación
 
 ```bash
-git clone https://github.com/tu-usuario/HormigasAIS-LBH.git
+git clone https://github.com/Thrumanshow/Thrumanshow/blob/main/miaap/LBH
 cd ~/miapp
 
 ```
