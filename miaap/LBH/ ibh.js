@@ -1,3 +1,7 @@
+// src/lbh.js
+// Lenguaje Binario HormigasAIS (LBH) - Codificación y decodificación bidireccional
+// Autor: Cristhiam Quiñonez (Thrumanshow)
+
 // Diccionario HormigasAIS extendido
 const LBH = {
   "01":"A","02":"B","03":"C","04":"D","05":"E","06":"F","07":"G","08":"H","09":"I","10":"J",
@@ -11,21 +15,34 @@ const LBH = {
   "00":" " // espacio
 };
 
+// Diccionario inverso para codificación rápida
 const LBH_REVERSE = {};
 for (let key in LBH) {
   LBH_REVERSE[LBH[key]] = key;
 }
 
-// Función para decodificar LBH → texto
-function decodeLBH(code) {
-  let pairs = code.match(/.{2}/g);
-  return pairs.map(pair => LBH[pair] || "").join("");
-}
-
-// Función para codificar texto → LBH
+// Codifica texto → LBH
 function encodeLBH(text) {
   return text.split("").map(char => LBH_REVERSE[char] || "").join("");
 }
 
+// Decodifica LBH → texto
+function decodeLBH(code) {
+  let pairs = code.match(/.{2}/g) || [];
+  return pairs.map(pair => LBH[pair] || "").join("");
+}
+
+// Permite agregar nuevos símbolos al diccionario (extensible)
+const LBH_EXT = {};
+function expandLBH(code, symbol) {
+  if (!LBH_EXT[code] && !LBH[code]) {
+    LBH_EXT[code] = symbol;
+    LBH_REVERSE[symbol] = code;
+    console.log(`Símbolo '${symbol}' agregado al código '${code}'`);
+  } else {
+    console.log(`El código '${code}' ya existe`);
+  }
+}
+
 // Exportamos funciones para otros scripts
-module.exports = { encodeLBH, decodeLBH };
+module.exports = { encodeLBH, decodeLBH, expandLBH };
