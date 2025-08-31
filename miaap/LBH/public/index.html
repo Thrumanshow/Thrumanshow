@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard HormigasAIS-LBH</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
+    h1 { color: #1a73e8; }
+    canvas { background: #fff; border: 1px solid #ccc; }
+    .logs { margin-top: 20px; background: #fff; padding: 10px; height: 150px; overflow-y: scroll; border: 1px solid #ccc; }
+    .logs p { margin: 0; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h1>Dashboard LBH</h1>
+  <canvas id="lbChart" width="600" height="300"></canvas>
+
+  <div class="logs" id="logs"></div>
+
+  <script>
+    const socket = io();
+    const ctx = document.getElementById("lbChart").getContext("2d");
+    const chart = new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: [],
+        datasets: [
+          { label: "Codificación", data: [], backgroundColor: "blue" },
+          { label: "Decodificación", data: [], backgroundColor: "green" },
+          { label: "Expansión", data: [], backgroundColor: "orange" }
+        ]
+      },
+      options: {
+        responsive: true,
+        animation: { duration: 300 }
+      }
+    });
+
+    const logs = document.getElementById("logs");
+
+    function addLog(message) {
+      const p = document.createElement("p");
+      p.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+      logs.appendChild(p);
+      logs.scrollTop = logs.scrollHeight;
+    }
+
+    // Eventos del servidor
+    socket.on("encoded", code => {
+      chart.data.labels.push(code);
+      chart.data.datasets[0].data.push(code.length);
+      chart.update();
+      addLog(`Codificado: ${code}`);
+    });
+
+    socket.on("decoded", msg => {
+      chart.data.datasets[1].data.push(msg.length);
+      chart.update();
+      addLog(`Decodificado: ${msg}`);
+    });
+
+    socket.on("expanded", ({ code, symbol }) => {
+      chart.data.datasets[2].data.push(symbol.length);
+      chart.update();
+      addLog(`Expansión: ${symbol} (código ${code})`);
+    });
+  </script>
+</body>
+</html>
