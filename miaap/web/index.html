@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard UltraPro16</title>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Socket.IO cliente -->
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 20px; }
+    canvas { background: #fff; border-radius: 8px; padding: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>UltraPro16 Dashboard</h2>
+  <canvas id="myChart" width="600" height="300"></canvas>
+
+  <script>
+    // ===== Chart.js =====
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
+            datasets: [{
+                label: 'Tráfico por minuto',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 2,
+                tension: 0.3
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'top' },
+                title: { display: true, text: 'Dashboard UltraPro16' }
+            }
+        }
+    });
+
+    // ===== Socket.IO =====
+    const socket = io('/my-16ultrapro'); // Conecta al namespace
+    socket.on('connect', () => {
+      console.log(`Conectado al socket con ID: ${socket.id}`);
+    });
+
+    socket.on('hello', (data) => {
+      console.log('Evento hello recibido:', data);
+      // Aquí puedes actualizar tu gráfico dinámicamente si quieres
+    });
+
+    socket.on('disconnect', () => {
+      console.log('Desconectado del socket');
+    });
+  </script>
+
+</body>
+</html>
