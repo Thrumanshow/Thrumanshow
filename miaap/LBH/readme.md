@@ -6,10 +6,9 @@ Este proyecto permite **codificar y decodificar texto** usando el Lenguaje Binar
 
 ```bash
 git clone https://github.com/tu-usuario/HormigasAIS-LBH.git
-cd HormigasAIS-LBH
-npm install
+cd ~/miapp
 
----
+```
 
 @@
 +# Ejecución en Termux
