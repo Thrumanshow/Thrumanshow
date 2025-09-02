@@ -1,5 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # ------------------------------
+# Propiedad de .human 
 # run16.sh - Ultra Master Thrumanshow
 # Innovador: Thrumanshow | 16UltraPro robusto, parametrizable y control de recursos
 # ------------------------------
