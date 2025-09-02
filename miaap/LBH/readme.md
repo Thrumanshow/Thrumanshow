@@ -33,7 +33,7 @@ cd miaap/LBH
 +tail -f lb.log
 +
 +# Abrir el dashboard web
-+termux-open-url http://localhost:3000
++termux-open-url http://localhost:127.0.0.1
 ```
 ---
 
