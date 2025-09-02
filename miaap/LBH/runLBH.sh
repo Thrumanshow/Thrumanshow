@@ -384,7 +384,7 @@ chmod +x run16.sh
 cat > panel.sh <<'SH'
 #!/data/data/com.termux/files/usr/bin/bash
 cd ~/miapp
-echo "Para abrir el dashboard web: ejecuta ./run16.sh y abre /dashboard en el navegador (o la URL de localtunnel)/dashboard"
+echo "Para abrir el dashboard web: ejecuta ./run16.sh y abre /dashboard en el navegador (http://localhost:127.0.0.1~/miapp/LBH)/dashboard"
 echo "También puedes ver métricas desde /metrics (JSON)."
 exec bash
 SH
@@ -401,8 +401,8 @@ echo " 1) Edita ~/miapp/.env y completa SLACK_WEBHOOK_URL o SLACK_BOT_TOKEN y SM
 echo "    nano ~/miapp/.env"
 echo " 2) Inicia el servicio y genera URL pública (localtunnel):"
 echo "    cd ~/miapp && ./run16.sh"
-echo " 3) Abre el dashboard:  http://localhost:127.0.0.1/dashboard  (o la URL que localtunnel te dé)/dashboard"
+echo " 3) Abre el dashboard:  http://localhost:127.0.0.1~/miapp/LBH/dashboard  (o la URL que localtunnel te dé)/dashboard"
 echo ""
 echo "Ejemplo rápido para probar alertas (ejecuta mientras run16.sh corre):"
-echo "  for i in \$(seq 1 8); do curl -s http://localhost:127.0.0.1/ >/dev/null; sleep 1; done"
+echo "  for i in \$(seq 1 8); do curl -s http://localhostlocalhost:127.0.0.1~/miapp/LBH/ >/dev/null; sleep 1; done"
 echo\n""
