@@ -1,96 +1,37 @@
 #!/data/data/com.termux/files/usr/bin/bash
-# --- UltraPro16 + barrera.js + Slack + Dashboard Web (One-Paste) ---
-# Pega todo esto en Termux y presiona Enter. Luego edita ~/miapp/.env para poner tus credenciales.
+# --- UltraPro16: inicio limpio en segundo plano ---
 set -e
-echo -e "\n🚀 INICIANDO INSTALACIÓN ONE-PASTE: UltraPro16 + barrera.js + Slack + Dashboard Web\n" 
 
-# 1) Actualizar sistema
-pkg update -y && pkg upgrade -y 
+PROJECT_DIR=~/miapp
+LOG_FILE="$PROJECT_DIR/run16.log"
 
-# 2) Instalar utilidades necesarias
-pkg install -y nodejs git nano jq curl termux-api 
+# Verificar existencia del proyecto
+if [ ! -d "$PROJECT_DIR" ]; then
+  echo "❌ No se encontró el directorio $PROJECT_DIR"
+  exit 1
+fi
 
-# 3) Crear carpeta del proyecto
-mkdir -p ~/miapp && cd ~/miapp 
+cd "$PROJECT_DIR"
 
-# 4) Inicializar npm y dependencias
-if [ ! -f package.json ]; then
-  npm init -y
-fi 
+# Matar cualquier instancia previa de Node
+pkill node || true
 
-# Instalar dependencias node (express, socket.io, dotenv, nodemailer, node-fetch@2, @slack/web-api)
-npm install express socket.io dotenv nodemailer node-fetch@2 @slack/web-api
-npm install -g nodemon localtunnel 
+# Iniciar servidor con nodemon en segundo plano, logueando stdout/stderr
+echo "🚀 Iniciando UltraPro16 en segundo plano..."
+nohup nodemon index.js >>"$LOG_FILE" 2>&1 &
 
-# 5) Crear archivo de configuración .env (REEMPLAZA los placeholders)
-cat > .env <<'ENV'
-# --- EDITA ESTOS VALORES ANTES DE USAR ---
-# Slack: puedes usar WEBHOOK o BOT TOKEN. Si usas BOT TOKEN activa scopes chat:write and channels:read.
-SLACK_WEBHOOK_URL=      # Ej: https://hooks.slack.com/services/AAA/BBB/CCC
-SLACK_BOT_TOKEN=        # Ej: xoxb-xxxxxxxxxx  (opcional si prefieres usar WebClient)
-SLACK_CHANNEL=#barrera-log  # canal o ID de canal en Slack 
+PID=$!
+echo "✅ Servidor corriendo en segundo plano con PID $PID"
+echo "📄 Logs: $LOG_FILE"
 
-# Email (opcional): para alertas por correo (Gmail: usa App Password)
-SMTP_USER=chrisquionez354@gmail.com
-SMTP_PASS=TU_APP_PASSWORD_GMAIL 
+# Mostrar instrucciones de acceso
+PORT=$(grep PORT .env | cut -d '=' -f2)
+PORT=${PORT:-3000}
+echo "🌐 Dashboard local: http://localhost:${PORT}/dashboard"
+echo "🔗 Exponer dashboard públicamente (localtunnel): npx localtunnel --port ${PORT}"
 
-# Umbral de alertas (solicitudes/minuto)
-THRESHOLD=5 
-
-# Puerto para Node/Express
-PORT=3000
-ENV 
-
-# 6) Crear barrera.js (registro + Slack notification via WebClient)
-cat > barrera.js <<'JSS'
-/**
-* barrera.js
-* - registra intentos en archivo local
-* - envía notificación a Slack (webhook o bot token si está configurado)
-*
-* Uso:
-*   const barrera = require('./barrera');
-*   barrera(true);
-*/
-const fs = require('fs');
-const path = require('path');
-const { WebClient } = require('@slack/web-api');
-const fetch = require('node-fetch'); 
-
-const LOG_PATH = path.join(__dirname, 'barrera_log.txt');
-const env = (() => {
-  try { return require('dotenv').config().parsed || {}; } catch(e) { return {}; }
-})(); 
-
-const SLACK_WEBHOOK = env.SLACK_WEBHOOK_URL || process.env.SLACK_WEBHOOK_URL || '';
-const SLACK_BOT_TOKEN = env.SLACK_BOT_TOKEN || process.env.SLACK_BOT_TOKEN || '';
-const SLACK_CHANNEL = env.SLACK_CHANNEL || process.env.SLACK_CHANNEL || '#general'; 
-
-let slackClient = null;
-if (SLACK_BOT_TOKEN) {
-  slackClient = new WebClient(SLACK_BOT_TOKEN);
-} 
-
-/** escribe log local */
-function writeLog(message) {
-  const entry = [
-    '=== BLOQUEO DE ACCIÓN ===',
-    message,
-    `Timestamp: ${new Date().toISOString()}`,
-    '=========================\n'
-  ].join('\n');
-  try {
-    fs.appendFileSync(LOG_PATH, entry);
-  } catch (e) {
-    console.error('Error escribiendo log:', e.message);
-  }
-} 
-
-/** envía a Slack: primero intenta WebClient (bot token), si no prueba webhook */
-async function notifySlack(text) {
-  const payload = { text };
-  try {
-    if (slackClient) {
+# Mantener el script activo para ver PID y logs
+echo "Para detener el servidor: kill $PID"    if (slackClient) {
       await slackClient.chat.postMessage({ channel: SLACK_CHANNEL, text });
       console.log('✅ Notificación enviada a Slack (bot token).');
       return;
