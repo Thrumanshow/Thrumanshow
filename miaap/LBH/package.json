@@ -1,7 +1,8 @@
 {
   "name": "hormigasais-lbh",
   "version": "1.0.0",
-  "main": "src/lbh.js",
+  "description": "Servidor LBH con Express y Socket.IO",
+  "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
     "test": "node examples/test.js"
