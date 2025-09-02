@@ -1,1 +1,1 @@
-nano runLBH.sh
+nano runLHB.sh
