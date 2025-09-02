@@ -1,5 +1,5 @@
 {
-  "name": "hormigasais-lhb",
+  "name": "miapp-lbh",
   "version": "1.0.0",
   "description": "Servidor LBH con Express y Socket.IO",
   "main": "src/server.js",
@@ -14,5 +14,5 @@
   "author": "Cristhiam Quiñonez",
   "license": "MIT"
 },
-"cd ~/miapp/LHB":"package.json",
+"cd ~/miapp/LBH":"package.json",
 "npm start": "socket.io"
