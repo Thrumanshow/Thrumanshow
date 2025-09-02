@@ -3,7 +3,7 @@ const io = require("socket.io")(3001, {
   cors: { origin: "*" } // si es desde otro dominio
 });
 
-io.of("/my-16ultrapro").on("connection", (socket) => {
+io.of("/my-LHB").on("connection", (socket) => {
   console.log(`Nuevo socket conectado: ${socket.id}`);
 
   socket
@@ -17,6 +17,6 @@ io.of("/my-16ultrapro").on("connection", (socket) => {
     });
 
   socket.on("disconnect", () => {
-    console.log(`Socket desconectado: ${socket.id}`);
+    console.log(`Socket conect: ${socket.id}`);
   });
 });
