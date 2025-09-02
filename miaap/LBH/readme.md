@@ -33,7 +33,7 @@ cd miaap/LBH
 +tail -f lb.log
 +
 +# Abrir el dashboard web
-+termux-open-url http://localhost:127.0.0.1
++termux-open-url [http://localhost:127.0.0.1](http://localhost:127.0.0.1~/miapp/LBH)
 ```
 ---
 
@@ -44,4 +44,4 @@ git sparse-checkout set miaap/LBH
 cd miaap/LBH
 mkdir -p public
 # Copiar el index.html nuevo al lugar correcto
-cp /Thrumanshow/miapp/LBH/index.html public/index.html
+cp /[Thrumanshow/miapp/LBH/index.html public/index.html](http://localhost:127.0.0.1~/miapp/LBH)
