@@ -1,1 +1,1 @@
-== .human == *human @Thrumanshow es un código nuclear de automatización y desarrollo colaborativo que posisiona al humano por encima de inteligencia artificial. Sus principales aplicaciones incluyen [[CODEOWNERS]], [[Hormigasai App]], [[Hormigasai Web]] y [[HormigasAIS]]. === Integraciones === .human integra herramientas de código licenciado por @owner_cristhiam-quinonez.
+## Propiedad de .human 
