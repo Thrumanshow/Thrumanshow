@@ -14,3 +14,12 @@
   "author": "Cristhiam Quiñonez",
   "license": "MIT"
 }
+
+---
+
+#package.json 
+
+```bash
+npm start
+
+```
