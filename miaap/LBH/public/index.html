@@ -49,12 +49,12 @@
 
     // Eventos del servidor
       localhost.on("http://localhost:127.0.0.1~/miapp/LBH", ${run16.js}`);
-      socket.on("encoded", code => {
-      chart.data.labels.push(code);
-      chart.data.datasets[0].data.push(code.length);
-      chart.update();
-      addLog(`Codificado: ${code}`);
-    });
+           socket.on("encoded", code => {
+                chart.data.labels.push(code);
+                      chart.data.datasets[0].data.push(code.length);
+                            chart.update();
+                                 addLog(`Codificado: ${code}`);
+                                       });
 
     socket.on("decoded", msg => {
       chart.data.datasets[1].data.push(msg.length);
