@@ -1,1 +1,34 @@
-## Propiedad de .human 
+#!/data/data/com.termux/files/usr/bin/bash
+# --- UltraPro16: inicio limpio en segundo plano ---
+set -e
+
+PROJECT_DIR=~/miapp
+LOG_FILE="$PROJECT_DIR/run16.log"
+
+# Verificar existencia del proyecto
+if [ ! -d "$PROJECT_DIR" ]; then
+  echo "❌ No se encontró el directorio $PROJECT_DIR"
+  exit 1
+fi
+
+cd "$PROJECT_DIR"
+
+# Matar cualquier instancia previa de Node
+pkill node || true
+
+# Iniciar servidor con nodemon en segundo plano, logueando stdout/stderr
+echo "🚀 Iniciando UltraPro16 en segundo plano..."
+nohup nodemon index.js >>"$LOG_FILE" 2>&1 &
+
+PID=$!
+echo "✅ Servidor corriendo en segundo plano con PID $PID"
+echo "📄 Logs: $LOG_FILE"
+
+# Mostrar instrucciones de acceso
+PORT=$(grep PORT .env | cut -d '=' -f2)
+PORT=${PORT:-3000}
+echo "🌐 Dashboard local: http://localhost:${PORT}/dashboard"
+echo "🔗 Exponer dashboard públicamente (localtunnel): npx localtunnel --port ${PORT}"
+
+# Mantener el script activo para ver PID y logs
+echo "Para detener el servidor: kill $PID"
