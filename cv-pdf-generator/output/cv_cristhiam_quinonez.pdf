@@ -1,1 +1,11 @@
-output/cv_cristhiam_quinonez.pdf
+
+---
+
+### 2. **requirements.txt**
+
+reportlab==4.0.9
+
+---
+
+### 3. **data/cv_resumido.txt**
+(ya limpio, en texto plano):
