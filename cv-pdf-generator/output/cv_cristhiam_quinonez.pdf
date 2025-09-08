@@ -1,8 +1,4 @@
 
----
-
-### 2. **requirements.txt**
-
 reportlab==4.0.9
 
 ---
