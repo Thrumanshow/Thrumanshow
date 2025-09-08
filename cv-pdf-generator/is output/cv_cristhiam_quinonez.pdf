@@ -1,0 +1,23 @@
+~ $ # Clonar el repo
+~ $ git clone https://github.com/tuusuario/cv-pdf-generator.git
+The program git is not installed. Install it by executing:
+ pkg install git
+~ $ cd cv-pdf-generator
+bash: cd: cv-pdf-generator: No such file or directory
+~ $
+~ $ # Instalar dependencias
+~ $ pip install -r requirements.txt
+The program pip is not installed. Install it by executing:
+ pkg install python-pip
+~ $
+~ $ # Ejecutar
+~ $ python scripts/generate_pdf.py
+The program python is not installed. Install it by executing:
+ pkg install python
+~ $
+~ $ # Tu archivo estará en:
+~ $ ls output/
+
+
+
+
