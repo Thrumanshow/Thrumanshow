@@ -3,7 +3,9 @@
 Este repositorio genera un archivo PDF con el currículum vitae resumido de Cristhiam Quiñonez.  
 Funciona en cualquier entorno Python (incluido Termux).  
 
-##Bash 
+---
+
+## Bash 
    ```bash
    git clone https://github.com/thrumanshow/cv-pdf-generator.git
    cd cv-pdf-generator
