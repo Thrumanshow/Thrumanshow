@@ -1,42 +1,27 @@
 # Archivo: humano.yaml
-# Configuración técnica de HormigasAIS por niveles
+# Configuración técnica de HormigasAIS
 
-basico:
-  identidad:
-    nombre: "HormigasAIS"
-    version: "1.0.0"
-  configuracion:
-    modo: "síncrono"
-    persistencia_datos: false
-  atributos:
-    capacidad_analitica: false
-    colaboracion: false
+identidad:
+  nombre: "HormigasAIS"
+  tipo: "AI-Service"
+  version: "1.0.0"
+  lenguaje_operativo: "Python"
+  descripcion: "Sistema que interpreta datos de interacción humana para su análisis automatizado"
+  
+configuracion:
+  modo: "asíncrono"
+  logging: true
+  nivel_log: "INFO"
+  persistencia_datos: true
+  base_datos: "PostgreSQL"
+  cache: "Redis"
+  
+atributos:
+  capacidad_analitica: true
+  colaboracion: true
+  escalabilidad: true
+  seguridad: true
 
-empresarial:
-  identidad:
-    nombre: "HormigasAIS"
-    version: "2.0.0"
-  configuracion:
-    modo: "asíncrono"        # Permite mayor velocidad
-    persistencia_datos: true # Habilita almacenamiento en base de datos
-    base_datos: "PostgreSQL"
-  atributos:
-    capacidad_analitica: true
-    colaboracion: true        # Permite integración con Slack y Discord
-    escalabilidad: true       # Habilita capacidad de crecimiento
-
-corporativo:
-  identidad:
-    nombre: "HormigasAIS"
-    version: "3.0.0"
-  configuracion:
-    modo: "asíncrono"
-    persistencia_datos: true
-    base_datos: "PostgreSQL"
-    cache: "Redis"
-    clave_licencia: "LIC-01A1B2C3D4E5" # Clave de activación única
-  atributos:
-    capacidad_analitica: true
-    colaboracion: true
-    escalabilidad: true
-    seguridad: true            # Habilita funciones de seguridad avanzada
+repositorio:
+  github: "https://github.com/HormigasAIS/xxxx"
+  rama_principal: "main"
