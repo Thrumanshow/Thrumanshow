@@ -1,16 +1,35 @@
-Categories:
-  - Productivity
-License: Apache-2.0
-SourceCode: https://github.com/HormigasAIS/XOXO-app
-IssueTracker: https://github.com/HormigasAIS/XOXO-app/issues
-Changelog: https://github.com/HormigasAIS/XOXO-app/releases
-Summary: XOXO — asistente creativo del ecosistema HormigasAIS
-Description: |
-  XOXO es el asistente móvil del proyecto HormigasAIS. Permite crear contenido,
-  disparar automatizaciones y trabajar con el Lenguaje Binario HormigasAIS.
-Builds:
-  - versionName: "1.0.0"
-    versionCode: 1
-    commit: v1.0.0
-    gradle:
-      - app
+name: Android Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Build Debug APK
+        run: ./gradlew :app:assembleDebug
+
+      - name: Build Release APK
+        run: ./gradlew :app:assembleRelease
+
+      - name: Upload APKs
+        uses: actions/upload-artifact@v3
+        with:
+          name: XOXO-APK
+          path: |
+            app/build/outputs/apk/debug/app-debug.apk
+            app/build/outputs/apk/release/app-release.apk
