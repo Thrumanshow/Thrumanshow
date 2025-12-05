@@ -20,7 +20,7 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      # 🌟 CORREÇÃO APLICADA: Esta etapa garante que o script gradlew possa ser executado.
+      # 🌟 FIX APPLIED: This step ensures the gradlew script is executable.
       - name: Make gradlew executable
         run: chmod +x ./gradlew 
 
