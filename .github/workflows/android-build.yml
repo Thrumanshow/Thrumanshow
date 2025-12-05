@@ -20,6 +20,10 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      # 🌟 CORREÇÃO APLICADA: Esta etapa garante que o script gradlew possa ser executado.
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew 
+
       - name: Build Debug APK
         run: ./gradlew :app:assembleDebug
 
