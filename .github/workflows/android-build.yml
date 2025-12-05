@@ -27,7 +27,7 @@ jobs:
         run: ./gradlew :app:assembleRelease
 
       - name: Upload APKs
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: XOXO-APK
           path: |
