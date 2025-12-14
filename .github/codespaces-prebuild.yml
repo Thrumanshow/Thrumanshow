@@ -1,0 +1,32 @@
+name: "XOXO- Dev Container Prebuild (HormigasAIS.com)"
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  workflow_dispatch:
+
+jobs:
+  prebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Codespaces Prebuild
+        uses: github/codespaces-prebuild@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          prebuild-name: "XOXO- Dev Container HormigasAIS Prebuild"
+          branch: ${{ github.ref_name }}
+          devcontainer-path: ".devcontainer/devcontainer.json"
+          wait-for-completion: true
+
+      - name: Notify on Success
+        if: success()
+        run: echo "✅ Prebuild for ${{ github.ref_name }} completed successfully."
+
+      - name: Notify on Failure
+        if: failure()
+        run: echo "❌ Prebuild for ${{ github.ref_name }} failed. Check Actions logs."
