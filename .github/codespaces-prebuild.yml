@@ -1,4 +1,4 @@
-name: "XOXO- Dev Container Prebuild (HormigasAIS.com)"
+name: "XOXO- Dev Container Prebuild (hormigasais-lab)"
 
 on:
   push:
@@ -8,10 +8,41 @@ on:
   workflow_dispatch:
 
 jobs:
-  prebuild:
+  # 1. TRABAJO DE DEPENDENCIA (Verifica la existencia del archivo .XOXO_TOKEN_READY)
+  dependency_check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Descargar Repositorio Fuente (Thrumanshow)
+        # Usa 'checkout' para descargar el repositorio de Thrumanshow en una carpeta temporal.
+        uses: actions/checkout@v3
+        with:
+          repository: Thrumanshow/Thrumanshow # Especificamos el repositorio externo
+          path: thrumanshow-source # Descarga el código en esta carpeta
+          
+      - name: Verificar Token de XOXO
+        id: token_check
+        run: |
+          TOKEN_PATH="./thrumanshow-source/.XOXO_TOKEN_READY"
+          
+          echo "Buscando el token de dependencia: ${TOKEN_PATH}"
+          
+          if [ -f "$TOKEN_PATH" ]; then
+            echo "✅ ¡Token de XOXO encontrado! La dependencia está satisfecha."
+            echo "token_present=true" >> $GITHUB_OUTPUT
+          else
+            echo "❌ ¡ERROR! El token .XOXO_TOKEN_READY NO fue encontrado en el repositorio de Thrumanshow."
+            # Usa 'exit 1' para forzar el fallo del job si el token no existe
+            exit 1 
+          fi
+
+  # 2. TRABAJO PRINCIPAL (Solo se ejecuta si 'dependency_check' tiene éxito)
+  prebuild:
+    # DEPENDENCIA EXPLICITADA: 'prebuild' necesita que 'dependency_check' termine con éxito.
+    needs: [dependency_check]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositorio actual (hormigasais-lab)
+        # Descarga tu repositorio actual para trabajar en él
         uses: actions/checkout@v3
 
       - name: Setup Codespaces Prebuild
