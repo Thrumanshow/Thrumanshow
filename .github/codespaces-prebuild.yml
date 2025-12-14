@@ -13,11 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Descargar Repositorio Fuente (Thrumanshow)
-        # Usa 'checkout' para descargar el repositorio de Thrumanshow en una carpeta temporal.
         uses: actions/checkout@v3
         with:
-          repository: Thrumanshow/Thrumanshow # Especificamos el repositorio externo
-          path: thrumanshow-source # Descarga el código en esta carpeta
+          repository: Thrumanshow/Thrumanshow
+          path: thrumanshow-source
           
       - name: Verificar Token de XOXO
         id: token_check
@@ -31,21 +30,35 @@ jobs:
             echo "token_present=true" >> $GITHUB_OUTPUT
           else
             echo "❌ ¡ERROR! El token .XOXO_TOKEN_READY NO fue encontrado en el repositorio de Thrumanshow."
-            # Usa 'exit 1' para forzar el fallo del job si el token no existe
             exit 1 
           fi
 
   # 2. TRABAJO PRINCIPAL (Solo se ejecuta si 'dependency_check' tiene éxito)
   prebuild:
-    # DEPENDENCIA EXPLICITADA: 'prebuild' necesita que 'dependency_check' termine con éxito.
     needs: [dependency_check]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repositorio actual (hormigasais-lab)
-        # Descarga tu repositorio actual para trabajar en él
         uses: actions/checkout@v3
 
+      - name: Configurar Entorno (Variables LAB)
+        # Este paso simula la configuración del entorno para la instalación.
+        run: |
+          echo "LAB_PATH=/home/usuario/hormigasais-lab" >> $GITHUB_ENV
+          echo "LAB_PYTHON=python3" >> $GITHUB_ENV
+          echo "Variables de entorno LAB configuradas."
+
+      - name: Instalar Dependencias de Python (requirements.txt)
+        # Instala las dependencias en el entorno de la Actions runner.
+        # Asumimos que el Dev Container también usará 'python3' como interprete.
+        run: ${{ env.LAB_PYTHON }} -m pip install -r requirements.txt
+        # NOTA: En GitHub Actions, el repositorio se descarga en la raíz, por lo que 
+        # 'requirements.txt' está accesible directamente. Usamos ${{ env.LAB_PYTHON }}
+        # para referenciar la variable 'python3'.
+
       - name: Setup Codespaces Prebuild
+        # NOTA: La instalación de dependencias debe ocurrir antes de este paso,
+        # ya que este paso es el que consolida el entorno pre-construido.
         uses: github/codespaces-prebuild@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
