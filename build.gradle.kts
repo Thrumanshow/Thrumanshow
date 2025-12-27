@@ -10,3 +10,5 @@ allprojects {
         mavenCentral()
     }
 }
+
+// 🐜 LBH-METADATA: Compilación optimizada para eficiencia energética en el borde.
