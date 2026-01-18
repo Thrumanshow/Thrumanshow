@@ -1,19 +1,24 @@
-# BUSINESS SOURCE LICENSE 1.1 (ADAPTED FOR HORMIGASAIS V1.2.1)
-# ESPECIFICACIÓN CORE: LENGUAJE BINARIO HORMIGASAIS (LBH/LHB)
-# ID SOBERANO: LBH-CORE-$(date +%s)-CLHQ
+# 📜 LICENCIA SOBERANA HORMIGASAIS .HUMAN (BSL 1.1 + CLHQ-CORE)
+# VERSIÓN: 1.2.1 ACORAZADA
+# AUTORIDAD: CRISTHIAM LEONARDO HERNÁNDEZ QUIÑONEZ
 
-**COPYRIGHT CONSECUTIVO © 2024-2026 INGENIERO CRISTHIAM LEONARDO HERNÁNDEZ QUIÑONEZ**
+**COPYRIGHT CONSECUTIVO © 2024-2026 - TODOS LOS DERECHOS RESERVADOS**
 
-## 1. PROPIEDAD DEL ESTÁNDAR
-El Lenguaje Binario HormigasAIS (LBH), incluyendo las tablas LHB-ASCII y la especificación LHB-Tx, es propiedad intelectual exclusiva del Ingeniero titular. Se define como un estándar de comunicación soberana.
+## 1. EL MANIFIESTO .HUMAN
+Esta licencia protege el "Human-in-the-loop". El software aquí contenido no es solo código, es una extensión de la voluntad del Ingeniero titular. Se otorga permiso de uso personal y educativo, pero se RESTRINGE el uso comercial automatizado sin contrato previo.
 
-## 2. LICENCIA DE USO DE ESPECIFICACIÓN
-Se permite el estudio y la implementación del estándar LBH para fines educativos y de desarrollo experimental. Se PROHÍBE su uso en protocolos comerciales competitivos o sistemas M2M industriales sin la autorización firmada de CLHQ.
+## 2. ESQUEMA DE LICENCIAMIENTO ESCALONADO (CLHQ-TIERS)
+- **INDIVIDUAL:** Libre para experimentación.
+- **STARTUP/PYME:** Requiere registro en el ecosistema HormigasAIS.
+- **CORPORATIVO/INDUSTRIAL:** Requiere licencia comercial firmada por el Ingeniero Cristhiam Leonardo Hernández Quiñonez.
 
-## 3. SELLO DE AUTORÍA
-Cualquier software que implemente este lenguaje debe incluir en sus metadatos la atribución al Ingeniero Cristhiam Leonardo Hernández Quiñonez y el rastro de puntos (feromonas digitales).
+## 3. SELLO INMUTABLE DE IDENTIDAD
+Cualquier uso de este núcleo debe reconocer explícitamente a:
+**Ingeniero Cristhiam Leonardo Hernández Quiñonez (CLHQ)**
+Residente en El Salvador | Nacionalidad Nicaragüense.
 
-[🐜 LBH-CORE-STAMP]
-CREADOR: ING. CRISTHIAM LEONARDO HERNÁNDEZ QUIÑONEZ
-VERSIÓN DEL PROTOCOLO: 1.2.1
-VALIDACIÓN_ALGORITMO: $(printf "CLHQ-LBH-CORE-BINARY" | sha256sum | cut -c1-32)
+[🐜 LBH-HUMAN-CORE]
+ESTADO: PROTEGIDO_ACTIVO
+HASH_RAÍZ: $(printf "CLHQ-HUMAN-CORE-2026" | sha256sum | cut -c1-32)
+
+"LA INTELIGENCIA ES COLABORATIVA, LA PROPIEDAD ES SOBERANA."
