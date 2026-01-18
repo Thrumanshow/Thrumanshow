@@ -1,19 +1,19 @@
 # BUSINESS SOURCE LICENSE 1.1 (ADAPTED FOR HORMIGASAIS V1.2.1)
-# NODO PERIFÉRICO: XOXO-ADAPTER-CORE
-# ID SOBERANO: XOXO-$(date +%s)-CLHQ
+# ESPECIFICACIÓN CORE: LENGUAJE BINARIO HORMIGASAIS (LBH/LHB)
+# ID SOBERANO: LBH-CORE-$(date +%s)-CLHQ
 
 **COPYRIGHT CONSECUTIVO © 2024-2026 INGENIERO CRISTHIAM LEONARDO HERNÁNDEZ QUIÑONEZ**
 
-## 1. VÍNCULO CON EL PROTOCOLO MAESTRO
-Este software es un componente crítico del ecosistema HormigasAIS. Su uso está estrictamente vinculado a los términos de gobernanza del LBH Protocol.
+## 1. PROPIEDAD DEL ESTÁNDAR
+El Lenguaje Binario HormigasAIS (LBH), incluyendo las tablas LHB-ASCII y la especificación LHB-Tx, es propiedad intelectual exclusiva del Ingeniero titular. Se define como un estándar de comunicación soberana.
 
-## 2. RESTRICCIÓN COMERCIAL (ELIMINACIÓN DE APACHE 2.0)
-A diferencia de versiones anteriores, este núcleo NO es Apache 2.0. Se prohíbe el uso en producción, venta como servicio o integración en sistemas industriales sin una licencia comercial CLHQ activa.
+## 2. LICENCIA DE USO DE ESPECIFICACIÓN
+Se permite el estudio y la implementación del estándar LBH para fines educativos y de desarrollo experimental. Se PROHÍBE su uso en protocolos comerciales competitivos o sistemas M2M industriales sin la autorización firmada de CLHQ.
 
-## 3. SELLO DE INTEGRIDAD
-Cualquier modificación debe ser firmada y validada por el Ingeniero titular.
+## 3. SELLO DE AUTORÍA
+Cualquier software que implemente este lenguaje debe incluir en sus metadatos la atribución al Ingeniero Cristhiam Leonardo Hernández Quiñonez y el rastro de puntos (feromonas digitales).
 
-[🐜 LBH-XOXO-VALIDATION]
-AUTOR: ING. CRISTHIAM LEONARDO HERNÁNDEZ QUIÑONEZ
-FIRMA: CLHQ
-VALIDACIÓN_HASH: $(printf "CLHQ-XOXO-CORE" | sha256sum | cut -c1-32)
+[🐜 LBH-CORE-STAMP]
+CREADOR: ING. CRISTHIAM LEONARDO HERNÁNDEZ QUIÑONEZ
+VERSIÓN DEL PROTOCOLO: 1.2.1
+VALIDACIÓN_ALGORITMO: $(printf "CLHQ-LBH-CORE-BINARY" | sha256sum | cut -c1-32)
