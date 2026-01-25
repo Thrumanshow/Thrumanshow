@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Thrumanshow/Thrumanshow/main/logo_hormigasais_soberano.svg" width="300" alt="HormigasAIS Logo">
+  <img src="logo_actualizado.svg" width="300" alt="HormigasAIS Logo">
 </p>
 
 # HormigasAIS - Infraestructura Distribuida
