@@ -1,11 +1,41 @@
-# 🐜 HormigasAIS - Nodo XOXO-
-### Interfaz de Inteligencia Distribuida y Soberana
+# 🐜 HormigasAIS: Infraestructura de Inteligencia Distribuida
 
-Este repositorio ha sido auditado y reclamado por la colonia bajo el protocolo **LBH (Lenguaje Binario HormigasAIS)**. 
-
-**Estado:** Operativo en el Borde (Edge Computing)
-**Soberanía:** lbh.human (Cristhiam Leonardo Hernández Quiñonez)
-**Propósito:** Visualización de eventos de seguridad y automatización resiliente.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Thrumanshow/Thrumanshow/main/logo_feromonas.png" alt="HormigasAIS Logo" width="200">
+  <br>
+  <i>"Soberanía, Resiliencia y Eficiencia en el Borde"</i>
+</p>
 
 ---
-*Protegiendo el territorio desde San Miguel, El Salvador.*
+
+## 🧠 Declaración de Visión 2026
+HormigasAIS es un ecosistema de agentes autónomos ligeros basado en el principio de la **Colonia de Hormigas**. Desarrollado por **Cristhiam Leonardo Hernández Quiñonez (CLHQ)**, el sistema utiliza el **Lenguaje-Binario-HormigasAIS (LBH)** para garantizar la soberanía de datos y la automatización extrema en entornos de Edge Computing.
+
+> [!IMPORTANT]
+> **Pitch Deck 2025:** Buscamos una inversión semilla de **$100,000 USD** para escalar la infraestructura y el protocolo LBH.
+
+---
+
+## 🛠️ Mapa del Ecosistema
+
+| Componente | Descripción | Estado |
+| :--- | :--- | :--- |
+| [**HormigasAIS-Core**](https://github.com/Thrumanshow/HormigasAIS-Core) | El núcleo normativo y contratos de soberanía. | 🟡 Estable |
+| [**HormigasAIS-Engine**](https://github.com/Thrumanshow/HormigasAIS-Engine) | El motor técnico de ejecución (Kotlin/Gradle). | 🟢 Operativo |
+| [**Automation-Core**](https://github.com/Thrumanshow/HormigasAIS-AutomationCore) | El sistema nervioso de eventos y respuestas. | 🟡 Evolución |
+| [**Nodo-Escuela**](https://github.com/Thrumanshow/HormigasAIS-Nodo-Escuela) | Entorno de simulación, aprendizaje y auditoría. | 🔵 Educativo |
+| [**Investment-Kit**](https://github.com/Thrumanshow/HormigasAIS-Investment-Kit) | Documentación estratégica y plan de inversión. | 💎 Crítico |
+
+---
+
+## 🛡️ Soberanía LBH (.human)
+Este nodo raíz valida la identidad y propiedad intelectual del protocolo. 
+- **Protocolo:** LBH (Lenguaje-Binario-HormigasAIS)
+- **Origen:** San Miguel, El Salvador 🇸🇻
+- **Autoría:** [CONTRACT_HUMAN.lbh](./CONTRACT_HUMAN.lbh)
+
+---
+<p align="center">
+  <b>El rastro de puntos (feromonas digitales) es la guía de la inteligencia colectiva.</b>
+</p>
+
