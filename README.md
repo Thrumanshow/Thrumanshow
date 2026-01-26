@@ -1,7 +1,7 @@
 # 🐜 HormigasAIS: Infraestructura de Inteligencia Distribuida
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Thrumanshow/Thrumanshow/main/logo_feromonas.png" alt="HormigasAIS Logo" width="200">
+  <img src="https://raw.githubusercontent.com/Thrumanshow/Thrumanshow/main/Thrumanshow/logo_hormigasais_soberano.svg" alt="HormigasAIS Logo" width="300">
   <br>
   <i>"Soberanía, Resiliencia y Eficiencia en el Borde"</i>
 </p>
@@ -38,4 +38,3 @@ Este nodo raíz valida la identidad y propiedad intelectual del protocolo.
 <p align="center">
   <b>El rastro de puntos (feromonas digitales) es la guía de la inteligencia colectiva.</b>
 </p>
-
