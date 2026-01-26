@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/Thrumanshow/Thrumanshow">
-    <img src="https://raw.githubusercontent.com/Thrumanshow/Thrumanshow/main/logo_hormigasais_soberano.svg" alt="HormigasAIS Logo" width="300" style="max-width: 100%; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0px 0px 3px rgba(255,255,255,0.7));">
+    <img src="https://raw.githubusercontent.com/Thrumanshow/Thrumanshow/main/logo_actualizado.svg" alt="HormigasAIS Logo" width="300" style="max-width: 100%; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0px 0px 3px rgba(255,255,255,0.7));">
   </a>
   <br>
   <i>"Soberanía, Resiliencia y Eficiencia en el Borde"</i>
