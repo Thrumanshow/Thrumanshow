@@ -1,7 +1,9 @@
 # 🐜 HormigasAIS: Infraestructura de Inteligencia Distribuida
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Thrumanshow/Thrumanshow/main/Thrumanshow/logo_hormigasais_soberano.svg" alt="HormigasAIS Logo" width="300">
+  <a href="https://github.com/Thrumanshow/Thrumanshow">
+    <img src="https://raw.githubusercontent.com/Thrumanshow/Thrumanshow/main/Thrumanshow/logo_hormigasais_soberano.svg" alt="HormigasAIS Logo" width="300" style="max-width: 100%; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0px 0px 2px rgba(255,255,255,0.5));">
+  </a>
   <br>
   <i>"Soberanía, Resiliencia y Eficiencia en el Borde"</i>
 </p>
@@ -12,7 +14,7 @@
 HormigasAIS es un ecosistema de agentes autónomos ligeros basado en el principio de la **Colonia de Hormigas**. Desarrollado por **Cristhiam Leonardo Hernández Quiñonez (CLHQ)**, el sistema utiliza el **Lenguaje-Binario-HormigasAIS (LBH)** para garantizar la soberanía de datos y la automatización extrema en entornos de Edge Computing.
 
 > [!IMPORTANT]
-> **Pitch Deck 2025:** Buscamos una inversión semilla de **$100,000 USD** para escalar la infraestructura y el protocolo LBH.
+> **Pitch Deck 2025:** Buscamos una inversión semilla de **$175,000 USD** para escalar la infraestructura y el protocolo LBH, optimizando la distribución de agentes y la soberanía del borde.
 
 ---
 
