@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <!-- Badge HormigasAIS LBH Embebido -->
-  <a href="https://hormigasais.com/verify" target="_blank">
+  <!-- Badge HormigasAIS LBH Embebido - Firma: CLHQ-Q5PTRLA0 -->
+  <a href="https://hormigasais.com/" target="_blank">
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAB4CAYAAA..." 
          alt="Certificado LBH CLHQ-Q5PTRLA0" 
          title="Verificar en hormigasais.com" 
