@@ -7,6 +7,17 @@
   <br>
   <i>"Soberanía, Resiliencia y Eficiencia en el Borde"</i>
 </p>
+<p align="center">
+  <!-- Badge HormigasAIS LBH Embebido -->
+  <a href="https://hormigasais.com/verify" target="_blank">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAB4CAYAAA..." 
+         alt="Certificado LBH CLHQ-Q5PTRLA0" 
+         title="Verificar en hormigasais.com" 
+         style="height:60px;border-radius:6px;">
+  </a>
+  <br>
+  <code>Firma: CLHQ-Q5PTRLA0 | Plan: Enterprise | Status: Permanente</code>
+</p>
 
 ---
 
