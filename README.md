@@ -7,6 +7,7 @@
   <br>
   <i>"Soberanía, Resiliencia y Eficiencia en el Borde"</i>
 </p>
+
 <p align="center">
   <!-- Badge HormigasAIS LBH Embebido -->
   <a href="https://hormigasais.com/verify" target="_blank">
