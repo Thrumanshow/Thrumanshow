@@ -9,18 +9,15 @@
 </p>
 
 <p align="center">
-  <!-- Badge HormigasAIS LBH Embebido - Firma: CLHQ-Q5PTRLA0 -->
-  <a href="https://hormigasais.com/" target="_blank">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAB4CAYAAA..." 
-         alt="Certificado LBH CLHQ-Q5PTRLA0" 
-         title="Verificar en hormigasais.com" 
-         style="height:60px;border-radius:6px;">
+  <a href="https://hormigasais.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/Thrumanshow/Thrumanshow/main/badge-lbh-CLHQ-Q5PTRLA0.png" alt="Validar Certificación LBH" width="300">
   </a>
   <br>
   <code>Firma: CLHQ-Q5PTRLA0 | Plan: Enterprise | Status: Permanente</code>
 </p>
 
 ---
+
 
 ## 🧠 Declaración de Visión 2026
 HormigasAIS es un ecosistema de agentes autónomos ligeros basado en el principio de la **Colonia de Hormigas**. Desarrollado por **Cristhiam Leonardo Hernández Quiñonez (CLHQ)**, el sistema utiliza el **Lenguaje-Binario-HormigasAIS (LBH)** para garantizar la soberanía de datos y la automatización extrema en entornos de Edge Computing.
